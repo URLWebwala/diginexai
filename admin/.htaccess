@@ -1,0 +1,33 @@
+# Admin Subdomain .htaccess
+# For admin.diginexai.com
+
+RewriteEngine On
+RewriteBase /admin/
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Prevent access to config files
+<FilesMatch "^(config|database|auth|\.htaccess)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect sensitive files
+<FilesMatch "\.(sql|log|ini|conf)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

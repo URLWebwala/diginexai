@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.log
+brain/
+.gemini/
+api/config/database.php

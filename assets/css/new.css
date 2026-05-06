@@ -1,0 +1,390 @@
+/* Clean Minimal Mobile Menu */
+.mobile-menu {
+  background: #f4f7fb; /* light grey background */
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  border-bottom: 1px solid #e0e4ea; /* underline effect */
+}
+
+.mobile-menu ul li:last-child {
+  border-bottom: none; /* remove last line */
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e1e2f;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+  color: #4a6cf7; /* blue hover */
+  padding-left: 24px; /* smooth slide effect */
+}
+
+/* Active link */
+.mobile-menu ul li a.active {
+  color: #4a6cf7;
+  font-weight: 600;
+}
+
+/* Hide header top section on mobile and tablet */
+/* Hide top bar + menu items on mobile & tablet */
+@media (max-width: 1024px) {
+  .header-top-section,   /* top contact bar */
+  .main-menu,            /* navigation menu */
+  .search-trigger,       /* search icon */
+  .header-button {
+    /* Get A Quote button */
+    display: none !important;
+  }
+}
+.footer-layout .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Equal gap between columns */
+}
+
+.footer-layout .col-xl-3,
+.footer-layout .col-xl-2,
+.footer-layout .col-xl-4 {
+  flex: 1 1 250px; /* All columns equal width, min 250px */
+}
+
+.footer-widget {
+  margin-bottom: 30px;
+}
+
+.footer-widget h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-widget ul li {
+  margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+  color: #3c72fc;
+}
+
+/* Social icons */
+.gt-social a {
+  display: inline-block;
+  margin-right: 12px;
+  font-size: 16px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.gt-social a:hover {
+  color: #3c72fc;
+}
+
+/* Email input box */
+.email-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.email-input-container input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+}
+
+.email-input-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: #3c72fc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-widget ul li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.footer-widget ul li a {
+  color: #fff; /* text white */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+  color: #3c72fc; /* hover color */
+}
+
+.footer-widget ul li i {
+  color: #fff; /* white arrow */
+  margin-right: 8px; /* spacing */
+  font-size: 14px;
+}
+
+.industries {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+/* Desktop - 6 columns */
+@media (min-width: 1025px) {
+  .industries {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Tablet - 3 columns */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .industries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile - 2 columns */
+@media (max-width: 767px) {
+  .industries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card i {
+  font-size: 36px;
+  color: #384bff;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.branding-text {
+  color: black;
+  transition: color 0.3s ease;
+}
+.branding-text:hover {
+  color: white;
+}
+
+.offer-section {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+.bg-gray {
+  background-color: #f9f9f9;
+}
+
+.offer-heading h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.offer-heading h2 span {
+  color: #384bff;
+}
+
+.offer-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.offer-heading h4::before {
+  background: #384bff;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.offer-heading {
+  margin-bottom: 60px;
+}
+
+.offer-item {
+  background: #ffffff;
+  border-left: 2px solid #384bff;
+  box-shadow: 0 0 10px #cccccc;
+  padding: 40px 25px;
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.offer-item i {
+  background: #384bff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 40px;
+  height: 80px;
+  line-height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.offer-item h4 {
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.offer-item p {
+  margin: 0;
+}
+
+.offer-item:hover {
+  background: #384bff;
+  color: #fff;
+}
+
+.offer-item:hover i {
+  background: #fff;
+  color: #384bff;
+}
+
+.offer-item:hover h4,
+.offer-item:hover p {
+  color: #fff;
+}
+
+.about-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon + Text in one row */
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: fadeInUp 0.6s ease-in-out;
+}
+
+.icon-text i {
+  font-size: 26px;
+  color: #384bff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-text h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0c0c1d;
+}
+
+/* Divider style */
+.divider {
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  margin: 10px 0;
+}
+
+/* Paragraph */
+.about-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.service-fixed {
+  height: 350px; /* Adjust to make all cards equal */
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.service-fixed .content p {
+  min-height: 60px; /* keeps text area aligned */
+}

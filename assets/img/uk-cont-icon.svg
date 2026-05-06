@@ -1,0 +1,101 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_316_2141)">
+<path d="M40 0C23.46 0 10 13.5533 10 30.2167C10 53.8933 37.18 78.34 38.3367 79.3667C38.8133 79.79 39.4067 80 40 80C40.5933 80 41.1867 79.79 41.6633 79.37C42.82 78.34 70 53.8933 70 30.2167C70 13.5533 56.54 0 40 0ZM40 46.6667C30.81 46.6667 23.3333 39.19 23.3333 30C23.3333 20.81 30.81 13.3333 40 13.3333C49.19 13.3333 56.6667 20.81 56.6667 30C56.6667 39.19 49.19 46.6667 40 46.6667Z" fill="white"/>
+</g>
+<path d="M40 1C55.981 1 69 14.099 69 30.2168C68.9999 41.7145 62.3771 53.5224 55.4668 62.6836C48.5834 71.8091 41.5533 78.1286 40.998 78.623C40.7098 78.8753 40.3552 79 40 79C39.6437 79 39.2888 78.8747 39.001 78.6191C38.4471 78.1275 31.4167 71.8087 24.5332 62.6836C17.6229 53.5228 11.0001 41.7144 11 30.2168C11 14.099 24.019 1 40 1ZM40 12.333C30.2577 12.333 22.333 20.2577 22.333 30C22.333 39.7423 30.2577 47.667 40 47.667C49.7423 47.667 57.667 39.7423 57.667 30C57.667 20.2577 49.7423 12.333 40 12.333Z" stroke="#090B0E" stroke-width="2"/>
+<g clip-path="url(#clip0_316_2141)" filter="url(#filter1_i_316_2141)">
+<mask id="mask0_316_2141" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="10" width="40" height="40">
+<path d="M40 50C51.0457 50 60 41.0457 60 30C60 18.9543 51.0457 10 40 10C28.9543 10 20 18.9543 20 30C20 41.0457 28.9543 50 40 50Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_316_2141)">
+<path d="M9.7666 7.49902H70.2326V52.4514H9.7666V7.49902Z" fill="#00247D"/>
+</g>
+<mask id="mask1_316_2141" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="10" width="40" height="40">
+<path d="M40 50C51.0457 50 60 41.0457 60 30C60 18.9543 51.0457 10 40 10C28.9543 10 20 18.9543 20 30C20 41.0457 28.9543 50 40 50Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_316_2141)">
+<path d="M63.4636 52.4512L39.9996 35.0008L16.5188 52.4512H9.7666V47.4135L33.2393 29.9752L9.7666 12.5132V7.49902H16.519L39.9996 24.9493L63.464 7.49902H70.2326V12.5125L46.7599 29.9752L70.2326 47.4123V52.4512H63.4636Z" fill="white"/>
+</g>
+<mask id="mask2_316_2141" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="10" width="40" height="40">
+<path d="M40 50C51.0457 50 60 41.0457 60 30C60 18.9543 51.0457 10 40 10C28.9543 10 20 18.9543 20 30C20 41.0457 28.9543 50 40 50Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_316_2141)">
+<path d="M14.2655 52.4512H9.7666L37.7628 31.5125L9.7666 10.8496V7.49902L37.8335 28.2351L65.7256 7.49902H70.2326L42.159 28.2409L70.2326 49.1007V52.4512L42.3393 31.5861L14.2655 52.4512Z" fill="#CF142B"/>
+</g>
+<mask id="mask3_316_2141" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="10" width="40" height="40">
+<path d="M40 50C51.0457 50 60 41.0457 60 30C60 18.9543 51.0457 10 40 10C28.9543 10 20 18.9543 20 30C20 41.0457 28.9543 50 40 50Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_316_2141)">
+<path d="M45.4882 53.8H34.5116V35.4634H7.07031V24.487H34.5116V6.59998H45.4882V24.487H72.9296V35.4634H45.4882V53.8Z" fill="white"/>
+</g>
+<mask id="mask4_316_2141" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="20" y="10" width="40" height="40">
+<path d="M40 50C51.0457 50 60 41.0457 60 30C60 18.9543 51.0457 10 40 10C28.9543 10 20 18.9543 20 30C20 41.0457 28.9543 50 40 50Z" fill="white"/>
+</mask>
+<g mask="url(#mask4_316_2141)">
+<path d="M43.2929 53.8H36.7069V33.2682H7.07031V26.6823H36.7069V6.59998H43.2929V26.6823H72.9296V33.2682H43.2929V53.8Z" fill="#CF142B"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_i_316_2141" x="10" y="-2" width="60" height="82" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.6 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_316_2141"/>
+</filter>
+<filter id="filter1_i_316_2141" x="20" y="8" width="40" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-2"/>
+<feGaussianBlur stdDeviation="3"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_316_2141"/>
+</filter>
+<clipPath id="clip0_316_2141">
+<rect width="40" height="40" fill="white" transform="translate(20 10)"/>
+</clipPath>
+</defs>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>

@@ -1,0 +1,18 @@
+# Uploads Directory Security
+
+# Allow image files only
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|svg)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Deny PHP files
+<FilesMatch "\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent execution of scripts
+Options -ExecCGI
+RemoveHandler .php .phtml .php3 .php4 .php5 .phps .cgi .exe .pl .asp .aspx .shtml .shtm .fcgi .fpl .jsp .htm .html .js
+

@@ -18,7 +18,7 @@ include('header.php');
                     </p>
                     <nav aria-label="breadcrumb" class="mt-4">
                         <ol class="breadcrumb mb-0" style="background: transparent; padding: 0;">
-                            <li class="breadcrumb-item"><a href="index.php" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/" style="color: rgba(255,255,255,0.7); text-decoration: none;">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page" style="color: #fff; font-weight: 700;">Services</li>
                         </ol>
                     </nav>

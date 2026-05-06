@@ -6,7 +6,7 @@
                     <span>Need a sharper digital presence?</span>
                     <h2>Start with a quick growth audit.</h2>
                 </div>
-                <a href="contact.php">Talk to a specialist <i class="fa-regular fa-arrow-right-long"></i></a>
+                <a href="contact">Talk to a specialist <i class="fa-regular fa-arrow-right-long"></i></a>
             </div>
         </div>
     </div>
@@ -35,21 +35,21 @@
                 <div class="footer-col fadeInUp" style="--delay:0.4s;">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="about.php"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> Our Services</a></li>
-                        <li><a href="blog.php"><i class="fas fa-chevron-right"></i> Blogs</a></li>
-                        <li><a href="contact.php"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> Our Services</a></li>
+                        <li><a href="blog"><i class="fas fa-chevron-right"></i> Blogs</a></li>
+                        <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col fadeInUp" style="--delay:0.6s;">
                     <h3>Services</h3>
                     <ul class="footer-links">
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> Graphic Design & Branding</a></li>
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> SEO Optimization</a></li>
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> Social Media Marketing</a></li>
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> Content Marketing</a></li>
-                        <li><a href="service.php"><i class="fas fa-chevron-right"></i> Website Development</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> Graphic Design & Branding</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> SEO Optimization</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> Social Media Marketing</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> Content Marketing</a></li>
+                        <li><a href="service"><i class="fas fa-chevron-right"></i> Website Development</a></li>
                     </ul>
                 </div>
 
@@ -77,8 +77,8 @@
                     2025 DiginexAI. All Rights Reserved.
                 </p>
                 <div class="footer-bottom-links">
-                    <a href="contact.php">Terms & Conditions</a>
-                    <a href="contact.php">Privacy Policy</a>
+                    <a href="contact">Terms & Conditions</a>
+                    <a href="contact">Privacy Policy</a>
                 </div>
             </div>
         </div>

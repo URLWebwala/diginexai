@@ -9,11 +9,11 @@ if ($host === 'localhost' || $host === '127.0.0.1' || strpos($host, '192.168.') 
     define('DB_PASS', '');
     define('DB_NAME', 'diginexai_local');
 } else {
-    // Production (Hostinger) - Update these with your Hostinger DB details
+    // Production (Hostinger) - UPDATED with provided credentials
     define('DB_HOST', 'localhost');
-    define('DB_USER', 'u123456789_diginex'); 
-    define('DB_PASS', 'your_production_password');
-    define('DB_NAME', 'u123456789_diginex_db');
+    define('DB_USER', 'u841045341_diginexai'); 
+    define('DB_PASS', 'Guddu@122812');
+    define('DB_NAME', 'u841045341_diginexai');
 }
 
 // Create connection

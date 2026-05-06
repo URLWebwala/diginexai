@@ -63,18 +63,20 @@ if (empty($page_title)) {
     // Define variables early for use throughout header
     $isBlogDetail = (basename($_SERVER['PHP_SELF']) == 'blogdetailpage.php');
     
-    // Detect local vs production
+    // Absolute base path detection
     $hostname = $_SERVER['HTTP_HOST'] ?? '';
     $isProduction = (strpos($hostname, 'diginexai.com') !== false);
     
-    // Absolute base path detection
-    $requestUri = $_SERVER['REQUEST_URI'] ?? '';
-    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
-    $dir = dirname($scriptName);
-    if ($dir === '/' || $dir === '\\') {
+    if ($isProduction) {
         $baseDir = '/';
     } else {
-        $baseDir = rtrim($dir, '/\\') . '/';
+        $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+        $dir = dirname($scriptName);
+        if ($dir === '/' || $dir === '\\') {
+            $baseDir = '/';
+        } else {
+            $baseDir = rtrim($dir, '/\\') . '/';
+        }
     }
 
     // Asset base path logic

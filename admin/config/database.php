@@ -1,9 +1,20 @@
 <?php
 // Database Configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'diginexai_local');
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+
+if ($host === 'localhost' || $host === '127.0.0.1' || strpos($host, '192.168.') !== false) {
+    // Local Development
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_NAME', 'diginexai_local');
+} else {
+    // Production (Hostinger) - Update these with your Hostinger DB details
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'u123456789_diginex'); 
+    define('DB_PASS', 'your_production_password');
+    define('DB_NAME', 'u123456789_diginex_db');
+}
 
 // Create connection
 function getDBConnection() {
@@ -28,4 +39,3 @@ function closeDBConnection($conn) {
     }
 }
 ?>
-

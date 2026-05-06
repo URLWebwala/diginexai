@@ -23,6 +23,7 @@ function fetchApiData($endpoint) {
  
 $testimonials_data = fetchApiData('/testimonials.php');
 $blogs_data = fetchApiData('/blogs.php');
+$clients_data = fetchApiData('/clients.php');
 ?>
 
 <main class="dx-home">
@@ -211,17 +212,47 @@ $blogs_data = fetchApiData('/blogs.php');
                 }
             }
         });
+
+        // Logo Slider Initialization
+        new Swiper('.dx-logo-slider', {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                576: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1200: { slidesPerView: 5 }
+            }
+        });
     });
     </script>
 
-    <section class="dx-logo-strip" aria-label="Trusted platform experience">
+    <section class="dx-logo-strip" aria-label="Trusted platform experience" style="overflow: hidden; padding: 40px 0;">
         <div class="container">
-            <div class="dx-logo-grid">
-                <span>Airtable</span>
-                <span>Razorpay</span>
-                <span>Contentful</span>
-                <span>Culture Amp</span>
-                <span>Dropbox</span>
+            <div class="swiper dx-logo-slider">
+                <div class="swiper-wrapper" style="align-items: center;">
+                    <?php if (!empty($clients_data)): ?>
+                        <?php foreach ($clients_data as $client): ?>
+                            <div class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
+                                <?php if (!empty($client['logo'])): ?>
+                                    <img src="<?php echo $client['logo']; ?>" alt="<?php echo htmlspecialchars($client['name'] ?? 'Client'); ?>" style="max-height: 48px; width: auto; opacity: 1; transition: all 0.4s ease;" />
+                                <?php else: ?>
+                                    <span style="font-weight: 800; color: #111322; opacity: 0.6; font-size: 20px;"><?php echo htmlspecialchars($client['name'] ?? 'Client'); ?></span>
+                                <?php endif; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <div class="swiper-slide" style="display: flex; justify-content: center;"><span>Airtable</span></div>
+                        <div class="swiper-slide" style="display: flex; justify-content: center;"><span>Razorpay</span></div>
+                        <div class="swiper-slide" style="display: flex; justify-content: center;"><span>Contentful</span></div>
+                        <div class="swiper-slide" style="display: flex; justify-content: center;"><span>Culture Amp</span></div>
+                        <div class="swiper-slide" style="display: flex; justify-content: center;"><span>Dropbox</span></div>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </section>

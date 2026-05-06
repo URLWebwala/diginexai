@@ -19,67 +19,11 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https'
 $host = $_SERVER['HTTP_HOST'] ?? 'api.diginexai.com';
 $baseUrl = $protocol . '://' . $host;
 
-$endpoints = [
-    'blogs' => [
-        'url' => $baseUrl . '/blogs.php',
-        'methods' => ['GET'],
-        'description' => 'Get all blog posts or single blog by ID or slug',
-        'examples' => [
-            'All blogs' => $baseUrl . '/blogs.php',
-            'Single blog by ID' => $baseUrl . '/blogs.php?id=1',
-            'Single blog by slug' => $baseUrl . '/blogs.php?slug=blog-slug'
-        ]
-    ],
-    'seo' => [
-        'url' => $baseUrl . '/seo.php',
-        'methods' => ['GET'],
-        'description' => 'Get SEO data by page name or SEO URL',
-        'examples' => [
-            'All SEO data' => $baseUrl . '/seo.php',
-            'By page name' => $baseUrl . '/seo.php?page_name=Home',
-            'By SEO URL' => $baseUrl . '/seo.php?seo_url=home'
-        ]
-    ],
-    'testimonials' => [
-        'url' => $baseUrl . '/testimonials.php',
-        'methods' => ['GET'],
-        'description' => 'Get all active testimonials or single testimonial by ID',
-        'examples' => [
-            'All testimonials' => $baseUrl . '/testimonials.php',
-            'Single testimonial' => $baseUrl . '/testimonials.php?id=1'
-        ]
-    ],
-    'clients' => [
-        'url' => $baseUrl . '/clients.php',
-        'methods' => ['GET'],
-        'description' => 'Get all active clients or single client by ID',
-        'examples' => [
-            'All clients' => $baseUrl . '/clients.php',
-            'Single client' => $baseUrl . '/clients.php?id=1'
-        ]
-    ],
-    'contact' => [
-        'url' => $baseUrl . '/contact.php',
-        'methods' => ['GET', 'POST'],
-        'description' => 'Get all contact messages (GET) or submit new contact form (POST)',
-        'examples' => [
-            'All messages' => $baseUrl . '/contact.php',
-            'Submit form' => $baseUrl . '/contact.php (POST)'
-        ]
-    ]
-];
-
 echo json_encode([
     'success' => true,
-    'message' => 'DiginexAI API - Available Endpoints',
-    'version' => '1.0.0',
-    'base_url' => $baseUrl,
-    'endpoints' => $endpoints,
-    'documentation' => [
-        'All endpoints return JSON format',
-        'CORS is enabled for all origins',
-        'All endpoints support OPTIONS preflight requests'
-    ]
+    'message' => 'Welcome to DiginexAI API Service.',
+    'status' => 'Active',
+    'version' => '1.0.0'
 ], JSON_PRETTY_PRINT);
 ?>
 

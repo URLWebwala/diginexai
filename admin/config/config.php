@@ -10,17 +10,15 @@ $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https'
 // Detect host
 $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
 
-// Production: admin.diginexai.com
-// Development: localhost/public_html/admin
-// Base URL for admin panel (subdomain)
-if (strpos($host, 'admin.') !== false || strpos($host, 'admin.diginexai.com') !== false) {
+// Production Check
+if (strpos($host, 'admin.diginexai.com') !== false) {
     // Production subdomain
-    define('BASE_URL', $protocol . '://' . $host . '/');
-    define('SITE_URL', $protocol . '://diginexai.com/');
+    define('BASE_URL', 'https://admin.diginexai.com/');
+    define('SITE_URL', 'https://www.diginexai.com/');
 } else {
     // Development
-    define('BASE_URL', $protocol . '://' . $host . '/public_html/admin/');
-    define('SITE_URL', $protocol . '://' . $host . '/public_html/');
+    define('BASE_URL', $protocol . '://' . $host . '/diginexai/admin/');
+    define('SITE_URL', $protocol . '://' . $host . '/diginexai/');
 }
 
 // Admin assets URL
@@ -34,4 +32,3 @@ if (!defined('BASE_URL')) {
     die('Direct access not allowed');
 }
 ?>
-

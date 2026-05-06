@@ -116,7 +116,7 @@ include('header.php');
         <div class="container">
             <div class="dx-about-grid">
                 <div class="dx-about-media">
-                    <img src="assets/img/faq/faqThumb1_1.png" alt="FAQ support" style="box-shadow: 0 24px 64px rgba(18,63,140,0.12);">
+                    <img src="assets/img/faq/faq_premium_support.png" alt="DiginexAI Support & Strategy" style="box-shadow: 0 24px 64px rgba(18,63,140,0.12); border-radius: 20px;">
                 </div>
                 <div class="dx-about-copy">
                     <span class="dx-kicker">Common Questions</span>

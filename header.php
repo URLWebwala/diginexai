@@ -61,32 +61,29 @@ if (empty($page_title)) {
     <!-- Base URL - only for blog detail pages to fix asset paths -->
     <?php 
     // Define variables early for use throughout header
-    $isBlogDetail = (basename($_SERVER['PHP_SELF']) == 'blogdetailpage.php' || 
-                     (isset($_GET['slug']) && !empty($_GET['slug'])));
-    // Detect local vs production - check for production domains explicitly
-    $hostname = $_SERVER['HTTP_HOST'] ?? '';
-    $isProduction = (
-        strpos($hostname, 'diginexai.com') !== false ||
-        strpos($hostname, 'www.diginexai.com') !== false ||
-        (strpos($hostname, '.') !== false && 
-         strpos($hostname, 'localhost') === false && 
-         strpos($hostname, '127.0.0.1') === false &&
-         strpos($hostname, 'xampp') === false &&
-         strpos($hostname, '.local') === false)
-    );
-    // Path handling for local vs production
-    $basePath = $isProduction ? '' : '/';
-
-    // Asset base path - use absolute paths for production blog detail pages
-    $assetBase = ($isBlogDetail && $isProduction) ? '/' : '';
+    $isBlogDetail = (basename($_SERVER['PHP_SELF']) == 'blogdetailpage.php');
     
-    // Only set base tag for local development
-    // Production: NO base tag (or set to / if needed for clean URLs)
-    if ($isBlogDetail && !$isProduction): ?>
-    <base href="<?php echo $basePath; ?>/">
-    <?php elseif ($isBlogDetail && $isProduction): ?>
-    <base href="/">
-    <?php endif; ?>
+    // Detect local vs production
+    $hostname = $_SERVER['HTTP_HOST'] ?? '';
+    $isProduction = (strpos($hostname, 'diginexai.com') !== false);
+    
+    // Absolute base path detection
+    $requestUri = $_SERVER['REQUEST_URI'] ?? '';
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $dir = dirname($scriptName);
+    if ($dir === '/' || $dir === '\\') {
+        $baseDir = '/';
+    } else {
+        $baseDir = rtrim($dir, '/\\') . '/';
+    }
+
+    // Asset base path logic
+    $assetBase = ''; 
+    if ($isBlogDetail) {
+        // For blog detail, we use the detected base directory
+        echo '<base href="' . $baseDir . '">';
+    }
+    ?>
     <title><?php echo htmlspecialchars($page_title); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($meta_description); ?>" />
     <?php if (!empty($meta_keywords)): ?>

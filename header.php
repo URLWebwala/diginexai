@@ -278,7 +278,7 @@ if (empty($page_title)) {
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="/diginexai/index.php"><img src="assets/img/diginexAilogo.png" alt="logo-img" /></a>
+                            <a href="<?php echo $baseDir; ?>index.php"><img src="assets/img/diginexAilogo.png" alt="logo-img" /></a>
                         </div>
                         <div class="offcanvas__close">
                             <button><i class="fas fa-times"></i></button>
@@ -291,11 +291,11 @@ if (empty($page_title)) {
                     </p>
                     <div class="mobile-menu mb-4">
                         <ul>
-                            <li><a href="/diginexai/index.php">Home</a></li>
-                            <li><a href="/diginexai/about.php">About Us</a></li>
-                            <li><a href="/diginexai/service.php">Services</a></li>
-                            <li><a href="/diginexai/blog.php">Blog</a></li>
-                            <li><a href="/diginexai/contact.php">Contact</a></li>
+                            <li><a href="<?php echo $baseDir; ?>index.php">Home</a></li>
+                            <li><a href="<?php echo $baseDir; ?>about.php">About Us</a></li>
+                            <li><a href="<?php echo $baseDir; ?>service.php">Services</a></li>
+                            <li><a href="<?php echo $baseDir; ?>blog.php">Blog</a></li>
+                            <li><a href="<?php echo $baseDir; ?>contact.php">Contact</a></li>
                         </ul>
                     </div>
                     <div class="offcanvas__contact">
@@ -309,7 +309,7 @@ if (empty($page_title)) {
                             <li><i class="far fa-phone"></i> +91 8140881396</li>
                         </ul>
                         <div class="header-button">
-                            <a href="/diginexai/contact.php" class="theme-btn bg-white"><span>Book A Demo
+                            <a href="<?php echo $baseDir; ?>contact.php" class="theme-btn bg-white"><span>Book A Demo
                                     <i class="fa-solid fa-arrow-right-long"></i></span></a>
                         </div>
                         <div class="social-icon d-flex align-items-center">
@@ -333,7 +333,7 @@ if (empty($page_title)) {
                     <div class="header-main">
                         <div class="header-left">
                             <div class="logo">
-                                <a href="/diginexai/index.php" class="header-logo">
+                                <a href="<?php echo $baseDir; ?>index.php" class="header-logo">
                                     <img src="assets/img/diginexAilogo.png" alt="logo" style="width: 160px" />
                                 </a>
                             </div>
@@ -342,16 +342,16 @@ if (empty($page_title)) {
                             <div class="mean__menu-wrapper">
                                 <div class="main-menu">
                                     <ul>
-                                        <li><a href="/diginexai/index.php">Home</a></li>
-                                        <li><a href="/diginexai/about.php">About Us</a></li>
-                                        <li><a href="/diginexai/service.php">Services</a></li>
-                                        <li><a href="/diginexai/blog.php">Blog</a></li>
-                                        <li><a href="/diginexai/contact.php">Contact</a></li>
+                                        <li><a href="<?php echo $baseDir; ?>index.php">Home</a></li>
+                                        <li><a href="<?php echo $baseDir; ?>about.php">About Us</a></li>
+                                        <li><a href="<?php echo $baseDir; ?>service.php">Services</a></li>
+                                        <li><a href="<?php echo $baseDir; ?>blog.php">Blog</a></li>
+                                        <li><a href="<?php echo $baseDir; ?>contact.php">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="header-button">
-                                <a href="/diginexai/contact.php" class="theme-btn bg-white">
+                                <a href="<?php echo $baseDir; ?>contact.php" class="theme-btn bg-white">
                                     <span>Book A Demo <i class="fa-solid fa-arrow-right-long"></i></span>
                                 </a>
                             </div>

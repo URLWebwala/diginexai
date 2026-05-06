@@ -35,7 +35,7 @@
                 <div class="footer-col fadeInUp" style="--delay:0.4s;">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="/diginexai/about.php"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="about.php"><i class="fas fa-chevron-right"></i> About Us</a></li>
                         <li><a href="service.php"><i class="fas fa-chevron-right"></i> Our Services</a></li>
                         <li><a href="blog.php"><i class="fas fa-chevron-right"></i> Blogs</a></li>
                         <li><a href="contact.php"><i class="fas fa-chevron-right"></i> Contact Us</a></li>

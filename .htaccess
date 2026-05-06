@@ -1,22 +1,20 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^index.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
 
-<IfModule mod_rewrite.c>
-RewriteEngine On
-# Keep direct file/folder access intact
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Prevent directory listing
+Options -Indexes
+
+# Handle index.php
+RewriteRule ^index\.php$ - [L]
 
 # Pretty URLs for core pages
-RewriteRule ^$ index.php [L]
-RewriteRule ^index/?$ index.php [L,NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^about/?$ about.php [L,NC]
 RewriteRule ^service/?$ service.php [L,NC]
 RewriteRule ^blog/?$ blog.php [L,NC]
@@ -25,6 +23,8 @@ RewriteRule ^contact/?$ contact.php [L,NC]
 # Blog detail pretty URL: /blog/your-slug
 RewriteRule ^blog/([^/]+)/?$ blogdetailpage.php?slug=$1 [L,QSA,NC]
 
-# Fallback 404 page for unknown routes
-RewriteRule ^.*$ 404.php [L]
+# Generic fallback for index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
 </IfModule>
